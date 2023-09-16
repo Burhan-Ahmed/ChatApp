@@ -26,10 +26,12 @@ Make sure that package.json file has <br>
 Use `Nodemon` for auto restart your server <br>
 
 ## Points to Ponder
-1. if else does not exit in jsx, thus use ternary operator because jsx is not a programming language but a syntax extension for xml
-
-## NODE
-
-1. use http along with built in createServer feature to create a server for http requests and responds.
-2. Once the Server is created you can Either respond something or request something.(Mostly it is a res or response)
- is not a Hacker.
+1. http request will be handle by express.
+2.  When this command in backend was executed
+ `import { Server } from 'socket.io';` 
+    then a file or resource was created which is then also  connected with front-end manually.
+## Express
+1. A Express server is created inside socket.io instance.
+2. To connect frontEnd(.html file) with backend we can either use cors or 
+ `res.sendFile(new URL('./index.html', import.meta.url).pathname);`
+ 

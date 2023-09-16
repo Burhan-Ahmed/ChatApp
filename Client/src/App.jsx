@@ -1,17 +1,18 @@
-import {io} from 'socket.io-client';
-const socket = io();
+import Chat from "./Chat";
+import Navbar from "./components/Navbar";
+import Message from "./Message";
+import './styles/App.scss'
+
 
 export default function App() {
 
   return (
     <>
-      <h1>Chat App</h1>
-      <div className="border">
-        <input type="text" onClick={(e) => { e.target.value }} className="p-2 border rounded-md" placeholder="Enter Message..." />
-        <button type="button" >
-          SEND
-        </button>
-      </div>
+    <Navbar user={"Burhan"} current_user={"Khawar"}/>
+    <div style={{"display":"flex"}}>
+    <Chat />
+    <Message />
+    </div>
     </>
   )
 }

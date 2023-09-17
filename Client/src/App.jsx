@@ -1,5 +1,9 @@
 import { io } from 'socket.io-client';
 import React, { useState, useEffect } from 'react';
+import Chat from "./Chat";
+import Navbar from "./components/Navbar";
+import Message from "./Message";
+import './styles/App.scss'
 
 const socket = io('http://localhost:8000');
 
@@ -51,6 +55,11 @@ export default function App() {
           </div>
         ))}
       </div>
+    <Navbar user={"Burhan"} current_user={"Khawar"}/>
+    <div style={{"display":"flex"}}>
+    <Chat />
+    <Message />
+    </div>
     </>
   )
 }

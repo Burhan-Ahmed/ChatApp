@@ -1,7 +1,7 @@
 # ChatApp Made in Collaboration with Khawar
 Practice Project using React + NodeJs/Express + Socket.io <br>
  
-Landing Page of Website![ChatApp](/UI design/LandingPage.PNG)
+Landing Page of Website![ChatApp](UI design/LandingPage.PNG)
 
 ## Tool
 VS Code

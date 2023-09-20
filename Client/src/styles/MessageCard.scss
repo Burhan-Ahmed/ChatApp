@@ -22,7 +22,7 @@
         }
     }
 }
-.other{
+.received{
     flex-direction:row-reverse;
     >.message-content{
     >div{
@@ -30,9 +30,10 @@
     }
 }
 }
-.user{
+.sent{
     >.message-content{
     >div{
+        background-color: rgb(250, 119, 119);
         border-radius: 0 25px 25px 25px;
     }
 }
